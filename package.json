@@ -1,0 +1,38 @@
+{
+  "name": "simple-dns-proxy",
+  "version": "0.0.1",
+  "description": "A simple DNS proxy with UI that allows to override name resolution of hosts based on regular expressions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "rm lib/* && iced -b -c -o lib/ src/*.iced"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arturoarevalo/simple-dns-proxy.git"
+  },
+  "keywords": [
+    "dns",
+    "proxy",
+    "ui",
+    "regex"
+  ],
+  "author": "Arturo Arevalo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arturoarevalo/simple-dns-proxy/issues"
+  },
+  "homepage": "https://github.com/arturoarevalo/simple-dns-proxy#readme",
+  "dependencies": {
+    "async": "^1.5.0",
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "iced-runtime": "^1.0.3",
+    "native-dns": "^0.7.0",
+    "winston": "^2.1.1",
+    "yargs": "^3.31.0"
+  },
+  "bin": {
+    "simple-dns-proxy": "./index.js"
+  }
+}
