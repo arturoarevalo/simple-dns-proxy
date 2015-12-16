@@ -41,7 +41,7 @@ class DnsServer
 
 
     secure: ->
-        if process.getuid() is 0
+        if process.getuid and process.getgid and process.getuid() is 0
             if @gid
                 logger.info "setting gid to", @gid
                 process.setgid @gid
