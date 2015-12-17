@@ -1,11 +1,11 @@
 {
   "name": "simple-dns-proxy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple DNS proxy with UI that allows to override name resolution of hosts based on regular expressions.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublish": "rm lib/* && iced -b -c -o lib/ src/*.iced"
+    "prepublish": "rm -f lib/* && iced -b -c -o lib/ -I node src/*.iced"
   },
   "repository": {
     "type": "git",
