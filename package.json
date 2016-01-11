@@ -1,6 +1,6 @@
 {
   "name": "simple-dns-proxy",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A simple DNS proxy with UI that allows to override name resolution of hosts based on regular expressions.",
   "main": "index.js",
   "scripts": {
@@ -29,7 +29,6 @@
     "express": "^4.13.3",
     "iced-runtime": "^1.0.3",
     "native-dns": "^0.7.0",
-    "winston": "^2.1.1",
     "yargs": "^3.31.0"
   },
   "preferGlobal": true,

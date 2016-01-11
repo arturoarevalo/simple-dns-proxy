@@ -1,5 +1,4 @@
-logger = require "./logger"
-
+logger = require "winston-color"
 
 class EntryList
 

@@ -1,4 +1,4 @@
-logger = require "./logger"
+logger = require "winston-color"
 
 dns = require "native-dns"
 async = require "async"
