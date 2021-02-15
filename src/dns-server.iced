@@ -81,7 +81,7 @@ class DnsServer
 
         for question in request.question
 
-            entries = @entries.findEntries question.name
+            entries = @entries.findEntries question.name, question.type
             if entries.length
                 for entry in entries
                     record =

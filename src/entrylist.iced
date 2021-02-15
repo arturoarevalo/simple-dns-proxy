@@ -29,7 +29,7 @@ class EntryList
         catch error
             logger.error "could not parse DNS record", data, error
 
-    findEntries: (name) ->
-        (entry for entry in @entries when entry.domainRegex.exec name)
+    findEntries: (name, type) ->
+        (entry for entry in @entries when ((entry.domainRegex.exec name) and (recordTable[entry.type] is type)))
 
 module.exports = EntryList
