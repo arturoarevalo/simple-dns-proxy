@@ -1,4 +1,5 @@
 logger = require "winston-color"
+recordTable = require "./record-table"
 
 class EntryList
 
